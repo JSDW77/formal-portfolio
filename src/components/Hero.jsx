@@ -13,13 +13,12 @@ const Hero = () =>{
                 <p>
                 {t("hero.p")}
                 </p>
+             <button>
                 <a href='https://mail.google.com/mail/?view=cm&fs=1&to=juliansosa.dw@gmail.com' target={'_blank'} rel='noreferrer'>
-                <button>
                 {t("hero.btn")}
                 <img src={sendIcon} alt='send-icon'></img>
-                
-                </button>
                 </a>
+              </button>
             </div>
             <div className='hero-right'>
                 <img src={Avatar} alt='avatar'></img>

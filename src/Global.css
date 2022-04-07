@@ -7,10 +7,9 @@
 }
 
 .header{
-  position: fixed;
-  top: 5px;
-  width: 90%;
-  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  margin: 15px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,7 +70,8 @@
 .Hero-cont{
   display: flex;
   height: 100vh;
-  align-items: center;
+  align-items: flex-start;
+  margin-top: 100px;
 }
 
 .hero-left{
@@ -112,6 +112,9 @@
   font-size: 30px;
   letter-spacing: 7px;
   transition: all 300ms;
+}
+
+.hero-left button a{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -126,6 +129,7 @@
   margin-left: 35px;
 }
 
+
 .hero-left a{
   text-decoration: none;
   color: #ffffff;
@@ -138,7 +142,7 @@ height: 100%;
 
 .hero-right img{
  position: absolute;
- bottom: 20px;
+ bottom: 250px;
  left: 50px;
 }
 
@@ -219,7 +223,7 @@ height: 100%;
 }
 
 .Projects-cont-2{
-  width: 800px;
+  width: 600px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -231,7 +235,7 @@ height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 10px;
   width: 250px;
   height: 250px;
   border-radius: 5px;
@@ -273,6 +277,7 @@ footer{
 .icos-cont{
   display: flex;
   align-items: center;
+  margin-top: 25px;
 }
 
 .icos-cont img{
@@ -293,9 +298,13 @@ footer h5{
 /*Responsive setings */
 /* Escritorio mas grande */
 @media only screen and (min-width: 1200px) and (max-width: 1470px){
+  
+  .Hero-cont{
+    height: 800px;
+  }
   .hero-left{
     width: 50%;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   
   .hero-left h1{
@@ -316,13 +325,94 @@ footer h5{
   }
   .hero-right{
     width: 48%;
+    height: 100%
     }
     
     .hero-right img{
-      left: 0;
-      bottom: 120px;
-      width: 600px;
-      height: 600px;
+      width: 500px;
+      height: 500px;
+    }
+
+    .Skill-title-cont{
+      display: flex;
+      margin-top: 0px;
+    }
+    
+    .Skill-title-cont h2{
+      font-size: 40px;
+      letter-spacing: 5px;
+      margin: 20px 0;
+      font-weight: lighter;
+    }
+    
+    .Skill-line{
+      width: 100px;
+      height: 2px;
+    }
+    
+    .Skill-dot{
+      margin-right: 10px;
+      width: 15px;
+      height: 15px;
+      background-color: #000000;
+    }
+    
+    .Skill-description-cont{
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .Skill-left{
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      
+    }
+    
+    .Skill-left h3{
+      font-size: 30px;    
+    }
+    
+    .Skill-left p{
+      font-size: 26px;
+      margin: 10px 0;
+    }
+    
+    .Skill-left-line{
+      margin: 25px 0;
+      height: 1px;
+    }
+
+   .Skill-right img{
+     width: 250px;
+     height: 650px;
+   }
+
+   .Projects-cont{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Projects-module{
+    width: 200px;
+    height: 200px;
+  }
+    .nodeGlow img,.nextGlow img{
+      width: 140px;
+      height: 100px;
+    }
+    .reactGlow img{
+      width: 135px;
+      height: 120px;
+    }
+    .figmaGlow img{
+      width: 100px;
+      height: 130px;
     }
 }
 
@@ -333,6 +423,7 @@ footer h5{
       height: 800px;
     }
    .hero-right{
+     position: relative;
     display: none;
     }
    .hero-left{
@@ -405,8 +496,49 @@ footer h5{
      width: 250px;
      height: 650px;
    }
-    
+   .Projects-cont{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .Projects-cont-2{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transform: rotate(45deg);
+  }
+  
+  .Projects-module{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .nodeGlow img,.nextGlow img{
+    width: 100px;
+    height: 70px;
+  }
+  .reactGlow img{
+    width: 95px;
+    height: 90px;
+  }
+  .figmaGlow img{
+    width: 70px;
+    height: 90px;
+  }
 
+
+  .icos-cont img{
+    margin: 10px 10px;
+    width: 32px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 300ms;
+  }  
     
 }
 
@@ -550,6 +682,14 @@ footer h5{
 
 /* Teléfonos */
 @media only screen and (max-width: 575px){
+
+  .Hero-cont{
+    display: flex;
+    height:fit-content;
+    align-items: center;
+    margin-bottom: 25px;
+    margin-top: 0px;
+  }
   .hero-right{
     display: none;
     }
@@ -687,13 +827,10 @@ footer h5{
       height: 70px;
     }
     
-
-    .Projects-module
-
        /*Footer*/
          
-      .icos-cont img{
-        margin: 10px 10px;
+      .icos-cont  img{
+        margin:0 10px;
         width: 32px;
         height: 30px;
         cursor: pointer;

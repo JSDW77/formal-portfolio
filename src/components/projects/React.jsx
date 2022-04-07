@@ -16,8 +16,8 @@ const ReactProjects = () =>{
     return(
         <div className='projects-page'>
             <div className='gallery'>
-                <ProjectModule imagenes={imagenesSpace} projectImg={space} projectDescription={t("react.space.description")} projectName='Space portfolio'/>
-                <ProjectModule imagenes={imagenesNbaAllIn} projectImg={NbaAll} projectDescription={t("node.nbaScraper.description")} projectName='Nba all in'/>
+                <ProjectModule imagenes={imagenesSpace} projectImg={space} projectDescription={t("react.space.description")} projectName='Space portfolio' status={t("react.space.status")} link={t("react.space.link")}/>
+                <ProjectModule imagenes={imagenesNbaAllIn} projectImg={NbaAll} projectDescription={t("node.nbaScraper.description")} projectName='Nba all in' status={t("node.nbaScraper.status")} link={t("node.nbaScraper.link")}/>
             </div>
         </div>
     )
