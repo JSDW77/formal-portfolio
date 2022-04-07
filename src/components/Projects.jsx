@@ -10,7 +10,7 @@ import insIcon from '../img/ins-icon.png'
 import mailIcon from '../img/mail-icon.png'
 import { Link } from 'react-router-dom'
 
-const Projects = () =>{
+const Projects = (props) =>{
 
     
     const [t] = useTranslation("global")
@@ -19,7 +19,7 @@ const Projects = () =>{
     const ProjectModule = (props) =>{
     
         return (
-            <div className= {props.brillo}>
+            <div className= {props.brillo} onClick={()=>props.setEstado(false)}>
                   <Link to={`/Projects/${props.name}`}><img src={props.imagen} alt="logo de react js" /></Link>
             </div>
         )
@@ -38,10 +38,10 @@ const Projects = () =>{
             </div>
             <div className='Projects-cont'>
                 <div className='Projects-cont-2'>
-                    <ProjectModule imagen={nextImg} brillo='Projects-module nextGlow' name='Next'/>
-                    <ProjectModule imagen={nodeImg} brillo='Projects-module nodeGlow' name='Node'/>
-                    <ProjectModule imagen={figmaImg} brillo='Projects-module figmaGlow' name='Figma'/>
-                    <ProjectModule imagen={reactImg} brillo='Projects-module reactGlow' name='React'/>
+                    <ProjectModule imagen={nextImg} brillo='Projects-module nextGlow' name='Next' estado={props.estado} setEstado={props.setEstado}/>
+                    <ProjectModule imagen={nodeImg} brillo='Projects-module nodeGlow' name='Node' estado={props.estado} setEstado={props.setEstado}/>
+                    <ProjectModule imagen={figmaImg} brillo='Projects-module figmaGlow' name='Figma' estado={props.estado} setEstado={props.setEstado}/>
+                    <ProjectModule imagen={reactImg} brillo='Projects-module reactGlow' name='React' estado={props.estado} setEstado={props.setEstado}/>
                 </div>
             </div>
             <footer>

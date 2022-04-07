@@ -231,12 +231,11 @@
 @media only screen and (max-width: 575px){
     .projectCont aside{
         position: relative;
-        top: 40px;
+        top: 20px;
         height: 30px;
         width: 100%; 
-        margin: 15px 0; 
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-evenly;
         flex-direction: row;
         border: none;  
     }
@@ -258,7 +257,7 @@
 
     .titleCont h1{
         margin: 0 3px;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: normal;
     }
     .dot{

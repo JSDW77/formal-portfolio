@@ -4,13 +4,13 @@ import euFlag from '../img/Icons/Others/EUFLAG.png'
 import { NavLink } from 'react-router-dom' 
 import homeIcon from '../img/Icons/Others/home.png'
 import projectsIcon from '../img/Icons/Others/projects.png'
-import { useState } from 'react'
 
 
-const NavBar = () =>{
+
+const NavBar = (props) =>{
     
     const [t,i18n] = useTranslation("global")
-    const [home,setHome]=useState(true)
+    
     return(
         <div className='header'>
             <p className='logo'>JSDW</p>
@@ -30,12 +30,12 @@ const NavBar = () =>{
         </div>
         <div className='menu-icon'>
             {
-             home?
-                <NavLink to='/Projects/All' onClick={()=>setHome(false)}>
+             props.estado?
+                <NavLink to='/Projects/All' onClick={()=>props.setEstado(false)}>
                 <img src={projectsIcon} alt="projects icon" />
                 </NavLink>
              :   
-                <NavLink to='/' onClick={()=>setHome(true)}>
+                <NavLink to='/' onClick={()=>props.setEstado(true)}>
                 <img src={homeIcon} alt="home icon" />
                 </NavLink>
             }

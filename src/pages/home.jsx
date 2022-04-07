@@ -3,13 +3,13 @@ import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 
 
-const Home = () =>{
+const Home = (props) =>{
     
     return(
         <>
        <Hero/>
        <Skills/>
-       <Projects/>
+       <Projects estado={props.estado} setEstado={props.setEstado}/>
         </> 
    )
 }
