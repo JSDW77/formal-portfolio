@@ -1,0 +1,51 @@
+{
+    "navbar":{
+        "home":"Inicio",
+        "skills":"Habilidades",
+        "projects":"Proyectos"
+    },
+    "hero":{
+        "h1a":"Hola mi nombre es",
+        "h1b":"Te doy la bienvenida a mi pagina web.",
+        "p":"Soy desarrolador web front end y diseñador ui/ux.En las siguientes secciones podras encontrar algunos de mis trabajos, tambien conocer mis habilidades y herramientas de trabajo.Espero poder ayudarte a hacer realidad tus proyectos.",
+        "btn":"Contactame"
+    },
+    "skill":{
+        "title":"Habilidades",
+        "h3a":"Mi ruta como desarrollador",
+        "pa":"En cuanto a la programacion, primeramente decidi seguir la ruta de un desarrollador front-end, inclinandome mas a la parte visual, utilizando las herramientas mas utiles al dia de hoy.",
+        "pb":"Del lado back-end, solo tengo conocimientos basicos de NodeJs y express.MongoDb para base de datos y algunas librerias para recolectar datos de otras paginas.",
+        "h3b":"Habilidades de diseño",
+        "pc":"En cuanto al diseño, hace mucho tiempo manejo photoshop para edicion de fotos o imagenes. Pero aparte de esta herramienta tambien añadi Figma para la maquetacion de las paginas webs."
+    },
+    "project":{
+        "title":"Proyectos",
+        "btn":"Ir"
+    },
+    "react":{
+        "space":{
+            "status":"Ready",
+            "link":"https://juliansosa-web.vercel.app/",
+            "description":"A la hora de crear mi pagina web, distintas ideas fueron apareciendo, con esta en particular, busque salir de lo formal."
+        }
+    },
+    "next":{
+        "gamersHeaven":{
+            "status":"Building",
+            "link":"#",
+            "description":"Es una plataforma virtual de juegos no funcional.Consta de registro de usuario, perfiles personalizables, medios de pago, privilegios segun tipo de plan."
+        },
+        "Aviva":{
+            "status":"Ready",
+            "link":"https://aviva-el-fuego.vercel.app/",
+            "description":"Es un proyecto personal con sistema de registro de usuario, niveles, recompensas, registro de lecturas y gerarquias."
+        }},
+    "node":{
+            
+            "nbaScraper":{
+                "status":"Ready",
+                "link":"https://nba-all-in.herokuapp.com/",
+                "description":"Es una aplicacion sensilla para ver cuales son los ultimos partidos de la nba, resultados y enfrentamientos. Ademas de tener una seccion de tabla de posiciones."
+            }
+        }
+}

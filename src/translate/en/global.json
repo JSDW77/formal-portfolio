@@ -1,0 +1,51 @@
+{
+    "navbar":{
+        "home":"Home",
+        "skills":"Skills",
+        "projects":"Projects"
+    },
+    "hero":{
+        "h1a":"Hello my name is",
+        "h1b":"Welcome to my web page.",
+        "p":"Im a Front-end developer and ui/ux designer.In the section below you will find some of my jobs,also know my skills and work tools.I hope i can help you to make your projects come true.",
+        "btn":"Contact"
+    },
+    "skill":{
+        "title":"Skills",
+        "h3a":"My developer roadmap",
+        "pa":"I decided to follow the path of a front-end developer, leaning more towards the visual part, using the most used tools today.",
+        "pb":"On the back-end side, I only have basic knowledge of NodeJs and express. MongoDb and Firestore for database. And some libraries for webscraping.",
+        "h3b":"Design skills",
+        "pc":"As for the design side, I've been using Photoshop for a long time to edit photos or images. But apart from this, i also added Figma for the layout of the web pages."
+    }
+    ,
+    "project":{
+        "title":"Projects",
+        "btn":"Go"
+    },
+    "react":{
+        "space":{
+            "status":"Ready",
+            "link":"https://juliansosa-web.vercel.app/",
+            "description":"When i was building my portfolio, i had many ideas, in this case i try to do something out of normal"
+        }
+    },
+    "next":{
+        "gamersHeaven":{
+            "status":"Building",
+            "link":"#",
+            "description":"It is a non-functional virtual gaming platform.It consists of user registration, customizable profiles, payment methods, privileges according to type of plan, and more."
+        },
+        "Aviva":{
+            "status":"Ready",
+            "link":"https://aviva-el-fuego.vercel.app/",
+            "description":"It is a personal project with a user registration system, levels, rewards, and much more."
+        }},
+    "node":{
+            "nbaScraper":{
+                "status":"Ready",
+                "link":"https://nba-all-in.herokuapp.com/",
+                "description":"It is a simple application to see what are the latest nba games, results, matches and standings."
+            }
+        }
+}

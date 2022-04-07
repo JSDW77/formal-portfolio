@@ -1,0 +1,327 @@
+.projectCont{
+    position: relative;
+    width: 100%;
+    height: 100vh;   
+}
+
+.projectCont aside{
+    position: fixed;
+    bottom: 0;
+    height: 90%;
+    width: 25%;  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-right: #000000 2px solid;
+}
+
+.projectCont aside a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.titleCont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.titleCont h1{
+    font-size: 40px;
+    font-weight: lighter;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.lines{
+    height: 3px;
+    width: 75px;
+    background-color:#000000;
+    transition: all 300ms;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color:#000000;
+    transition: all 300ms;
+}
+
+.midleDot{
+    position: absolute;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.titleCont:hover .lines{
+    width: 150px;
+    background-color:#0AD0FB;
+}
+.titleCont:hover .dot{
+    background-color:#0AD0FB;
+}
+
+.linesActive{
+    height: 3px;
+    width: 150px;
+    background-color:#0AD0FB;
+}
+
+.dotActive{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transition: all 300ms;
+    background-color:#0AD0FB;
+}
+
+/*Right side proyect page*/
+
+.projects-page{
+    margin-left: 28%;
+    height: 100%;
+}
+
+.gallery{
+    margin-top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projectModule{
+    width: 500px;
+    height: 320px;
+    margin: 25px;
+    background: #F3F0F0;
+    box-shadow: 0px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.module-left{
+    margin: 0 10px;
+}
+
+.module-left img{
+    margin-top:8px;
+}
+
+.module-right{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.module-right h2{
+    font-size: 26px;
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+.module-title{
+    display: flex;
+    align-items: center;
+}
+
+.statusOn{
+    margin-top: 10px;
+    display: block;
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #10ee6c;
+}
+.statusOff{
+    margin-top: 10px;
+    display: block;
+    margin-left: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #f5a803;
+}
+
+.module-right p{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+.project-icons{
+    display: flex;
+    align-items: center;
+}
+
+.project-icons img{
+    margin: 10px;
+}
+
+.project-btn{
+    width: 150px;
+    height: 35px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    background-color: #d1d6d3;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 300ms;
+}
+
+.links{
+    text-decoration: none;
+    color: #000000;
+}
+
+.project-btn p{
+    font-size: 20px;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+.project-btn:hover{
+    background-color: #10ee6c;
+    transform: scale(1.1);
+}
+
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 835px) and (max-width: 1199px){
+    .lines{
+        width: 15px;   
+    }
+    .linesActive{
+        width: 30px;   
+    }
+    .titleCont:hover .lines{
+        width: 30px;
+    }
+    .titleCont h1{
+        font-size: 35px;
+    }
+}
+
+/* Tablets y phablets */
+@media only screen and (min-width: 576px) and (max-width: 834px){
+    .lines{
+        width: 15px;   
+    }
+    .linesActive{
+        width: 30px;   
+    }
+    .titleCont:hover .lines{
+        width: 30px;
+    }
+    .titleCont h1{
+        font-size: 15px;
+    }
+}
+
+/* Teléfonos */
+@media only screen and (max-width: 575px){
+    .projectCont aside{
+        position: relative;
+        top: 40px;
+        height: 30px;
+        width: 100%; 
+        margin: 15px 0; 
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        border: none;  
+    }
+    .lines{
+        display: none;
+        width: 5px;
+          
+    }
+    .linesActive{
+       display: none;  
+    }
+    .titleCont:hover .lines{
+        width: 10px;
+    }
+
+    .titleCont{
+        margin: 0 5px;
+    }
+
+    .titleCont h1{
+        margin: 0 3px;
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .dot{
+        display: none;     
+    }
+    .midleDot{
+      display: none;
+    }
+    
+    .dotActive{
+        width: 5px;
+        height: 5px;
+    }
+
+    .projects-page{
+        margin: 10px;
+        height: 100%;
+    }
+    
+    .gallery{
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+    
+    .projectModule{
+        width: fit-content;
+        height: fit-content;
+        margin: 10px 0;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .module-left{
+       display: none;
+    }
+    
+     
+    .module-right{
+        height: 100%;
+        margin: 10px;
+    }
+    
+    .module-right h2{
+        font-size: 20px;
+        margin: 0;
+        font-weight: normal;
+    }
+    
+    .module-right p{
+        margin: 5px 0;
+        font-size: 16px;
+        font-weight: lighter;
+    }
+   
+
+    .project-btn p {
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: normal;
+        margin-right: 15px;
+    }
+}
