@@ -101,6 +101,7 @@
 }
 
 .hero-left button{
+  border: none;
   margin-top: 50px;
   width: 410px;
   height: 75px;
