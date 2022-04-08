@@ -44,7 +44,7 @@
             
             "nbaScraper":{
                 "status":"Ready",
-                "link":"https://nba-all-in.herokuapp.com/",
+                "link":"https://nba-all-in.vercel.app/",
                 "description":"Es una aplicacion sensilla para ver cuales son los ultimos partidos de la nba, resultados y enfrentamientos. Ademas de tener una seccion de tabla de posiciones."
             }
         }

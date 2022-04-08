@@ -44,7 +44,7 @@
     "node":{
             "nbaScraper":{
                 "status":"Ready",
-                "link":"https://nba-all-in.herokuapp.com/",
+                "link":"https://nba-all-in.vercel.app/",
                 "description":"It is a simple application to see what are the latest nba games, results, matches and standings."
             }
         }
