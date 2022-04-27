@@ -16,8 +16,8 @@ const NavBar = (props) =>{
             <p className='logo'>JSDW</p>
             <nav className='nav-bar'>
                     <ul>
-                        <NavLink to='/' >{t("navbar.home")}</NavLink>
-                        <NavLink to='/Projects/All'>{t("navbar.projects")}</NavLink>
+                        <NavLink to='/' style={({isActive })=> ({color: isActive ? "#113BD2" : "#000000"})}>{t("navbar.home")}</NavLink>
+                        <NavLink to='/Projects/All' style={({isActive}) => ({color: isActive ? "#113BD2" : "#000000"})}>{t("navbar.projects")}</NavLink>
                     </ul>
             </nav>
         <div className='flag-cont'>

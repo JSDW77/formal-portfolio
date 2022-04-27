@@ -1,7 +1,10 @@
+body{
+    height: fit-content;
+}
+
 .projectCont{
     position: relative;
     width: 100%;
-    height: 100vh;   
 }
 
 .projectCont aside{
@@ -36,7 +39,7 @@
 
 .lines{
     height: 3px;
-    width: 75px;
+    width: 55px;
     background-color:#000000;
     transition: all 300ms;
 }
@@ -59,7 +62,7 @@
 }
 
 .titleCont:hover .lines{
-    width: 150px;
+    width: 100px;
     background-color:#0AD0FB;
 }
 .titleCont:hover .dot{
@@ -84,11 +87,10 @@
 
 .projects-page{
     margin-left: 28%;
-    height: 100%;
 }
 
 .gallery{
-    margin-top: 120px;
+    padding-top: 60px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -123,17 +125,16 @@
 
 .module-right h2{
     font-size: 26px;
-    margin-top: 8px;
     font-weight: normal;
 }
 
 .module-title{
     display: flex;
     align-items: center;
+    padding-top: 8px;
 }
 
 .statusOn{
-    margin-top: 10px;
     display: block;
     margin-left: 10px;
     width: 15px;
@@ -142,7 +143,6 @@
     background-color: #10ee6c;
 }
 .statusOff{
-    margin-top: 10px;
     display: block;
     margin-left: 10px;
     width: 15px;
@@ -278,7 +278,7 @@
     }
     
     .gallery{
-        margin-top: 35px;
+        padding-top: 20px;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
